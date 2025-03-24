@@ -1,5 +1,7 @@
 Project Documentation
+
 Prerequisites
+
 Before running the backend server and Flutter application, ensure you have the following installed:
 
 Flutter Environment
@@ -10,9 +12,11 @@ Dart SDK: Included with Flutter
 Platform: The application is optimized for Android devices
 
 To check your installed Flutter version, run:
+
 flutter --version
 
 If you have a different version installed, consider switching to 3.24.1 using:
+
 flutter downgrade 3.24.1
 
 Or install the correct version from the Flutter official site: https://flutter.dev/docs/get-started/install
