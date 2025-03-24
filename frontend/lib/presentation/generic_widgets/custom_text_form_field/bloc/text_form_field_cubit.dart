@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:frontend/core/generic_widgets/custom_text_form_field/bloc/text_form_field_state.dart';
+import 'package:frontend/presentation/generic_widgets/custom_text_form_field/bloc/text_form_field_state.dart';
 
 class TextFormFieldCubit extends Cubit<TextFormFieldState>{
   TextFormFieldCubit() : super(InitialTextFieldFormState());

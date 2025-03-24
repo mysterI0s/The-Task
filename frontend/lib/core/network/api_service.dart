@@ -8,7 +8,7 @@ class ApiService {
   Future<dynamic> post(String endpoint, Map<String, dynamic> data) async {
     final url = Uri.parse('$baseUrl$endpoint');
 
-    print("Making POST request to: $url with data: $data"); // Debugging Line
+    // Debugging Line
 
     try {
       final response = await http.post(
@@ -17,8 +17,6 @@ class ApiService {
         body: jsonEncode(data),
       );
 
-      print("HTTP Status Code: ${response.statusCode}");
-      print("HTTP Response Body: ${response.body}");
 
       if (response.statusCode == 200 || response.statusCode == 201) {
         return jsonDecode(response.body);
@@ -26,7 +24,6 @@ class ApiService {
         throw Exception("API Error: ${response.body}");
       }
     } catch (e) {
-      print("HTTP Request Error: $e");
       throw Exception("Network Error: $e");
     }
   }

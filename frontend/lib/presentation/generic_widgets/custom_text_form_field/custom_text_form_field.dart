@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../theme/app_colors.dart';
+import '../../../core/theme/app_colors.dart';
 import 'bloc/text_form_field_cubit.dart';
 import 'bloc/text_form_field_state.dart';
 

@@ -1,10 +1,10 @@
 import 'package:frontend/core/constants/app_images.dart';
 import 'package:frontend/core/constants/app_strings.dart';
-import 'package:frontend/core/generic_widgets/custom_text_form_field/bloc/text_form_field_cubit.dart';
-import 'package:frontend/core/generic_widgets/custom_text_form_field/custom_text_form_field.dart';
-import 'package:frontend/core/generic_widgets/main_button.dart';
+import 'package:frontend/presentation/generic_widgets/custom_text_form_field/bloc/text_form_field_cubit.dart';
+import 'package:frontend/presentation/generic_widgets/custom_text_form_field/custom_text_form_field.dart';
+import 'package:frontend/presentation/generic_widgets/main_button.dart';
 import 'package:frontend/core/theme/app_text_style.dart';
-import 'package:frontend/authentication/screens/verification_screen.dart';
+import 'package:frontend/presentation/views/authentication_screens/verification_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';

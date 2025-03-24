@@ -1,15 +1,15 @@
-import 'package:frontend/data/models/login_model.dart';
-
 class RegisterModel {
-  final String message;
-  final User user;
+  final String insertedID;
 
-  RegisterModel({required this.message, required this.user});
+  RegisterModel({required this.insertedID});
 
   factory RegisterModel.fromJson(Map<String, dynamic> json) {
     return RegisterModel(
-      message: json['message'],
-      user: User.fromJson(json['user']),
+      insertedID: json['InsertedID'] ?? '',
     );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {"InsertedID": insertedID};
   }
 }

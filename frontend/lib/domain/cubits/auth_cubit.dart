@@ -15,7 +15,6 @@ class AuthCubit extends Cubit<AuthState> {
           email, firstName, lastName, phoneNumber, password, confirmPassword);
       emit(RegisterSuccessState(registerModel));
     } catch (e) {
-      print(e);
       emit(RegisterErrorState(e.toString()));
     }
   }

@@ -32,11 +32,9 @@ class AuthRepository {
         "password_confirmation": confirmPassword,
       });
 
-      print("Raw Response: $response"); // Debugging line
 
       return RegisterModel.fromJson(response);
     } catch (e) {
-      print("Error: $e");
       rethrow;
     }
   }

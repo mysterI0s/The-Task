@@ -1,15 +1,15 @@
 import 'package:frontend/core/constants/app_consts.dart';
 import 'package:frontend/core/constants/app_images.dart';
 import 'package:frontend/core/constants/app_strings.dart';
-import 'package:frontend/core/generic_widgets/custom_text_form_field/custom_text_form_field.dart';
-import 'package:frontend/core/generic_widgets/main_button.dart';
+import 'package:frontend/presentation/generic_widgets/custom_text_form_field/custom_text_form_field.dart';
+import 'package:frontend/presentation/generic_widgets/main_button.dart';
 import 'package:frontend/core/theme/app_colors.dart';
 import 'package:frontend/core/theme/app_text_style.dart';
-import 'package:frontend/authentication/screens/forgot_password_screen.dart';
-import 'package:frontend/authentication/screens/sign_up_screen.dart';
+import 'package:frontend/presentation/views/authentication_screens/forgot_password_screen.dart';
+import 'package:frontend/presentation/views/authentication_screens/sign_up_screen.dart';
 import 'package:frontend/domain/cubits/auth_cubit.dart';
 import 'package:frontend/domain/cubits/auth_state.dart';
-import 'package:frontend/home/screens/home_screen.dart';
+import 'package:frontend/presentation/views/home_screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -87,6 +87,7 @@ class SignInScreen extends StatelessWidget {
                       box.write(AppConst.userName,
                           "${user.firstName} ${user.lastName}");
                       box.write(AppConst.userEmail, user.email);
+                      box.write(AppConst.userPhone, user.phone);
 
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
