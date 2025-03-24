@@ -1,0 +1,29 @@
+class AppStrings {
+  static const String welcome = "Welcome";
+  static const String login = "Login";
+  static const String signup = "Signup";
+  static const String firstName = "FIrst Name";
+  static const String email = "Email";
+  static const String password = "Password";
+  static const String confirmPassword = "Confirm Password";
+  static const String or = "or";
+  static const String doNotHaveAccount = "Do not have an account?";
+  static const String haveAccount = "Have an account?";
+  static const String forgotPassword = "Forgot password";
+  static const String enterEmailAddress = "Enter email address";
+  static const String sendCode = "Send code";
+  static const String verification = "Verification";
+  static const String enterVerificationCode = "Enter verification code";
+  static const String didNotReceiveCode = "Did not receive code";
+  static const String resend = "Resend";
+  static const String enterCode = "Enter code";
+  static const String enterNewPassword = "Enter new password";
+  static const String continueText = "Continue";
+  static const String loggedInSuccessfully = "Logged in successfully!";
+  static const String pleaseFillAllFields = "Please fill all fields";
+  static const String signedUpSuccessfully = "Signed up successfully";
+  static const String phoneNumber = "Phone number";
+  static const String invalidPassword = "Invalid password";
+  static const String passwordsDoNotMatch = "Passwords do not match";
+  static const String lastName = "Last Name";
+}
